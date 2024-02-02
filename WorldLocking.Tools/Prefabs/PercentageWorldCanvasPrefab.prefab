@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8304284846226879741}
   - component: {fileID: 4406112892218716715}
   - component: {fileID: 7937835563154135783}
-  - component: {fileID: 3514045474201337590}
+  - component: {fileID: 6805194792638095828}
   m_Layer: 5
   m_Name: PercentageWorldCanvasPrefab
   m_TagString: Untagged
@@ -29,10 +29,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4939529525305660794}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -56,7 +56,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -77,7 +79,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3514045474201337590
+--- !u!114 &6805194792638095828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,17 +88,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 3335127461111217805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffc9eaa0c00b2bf46a69038142592bf8, type: 3}
+  m_Script: {fileID: 11500000, guid: ea57930e73a01e64da2b9d9e67ad2121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   percentageNumberText: {fileID: 269047534287196742}
   percentageNumberTextOutline: {fileID: 2794620669755706639}
-  lowPercentageColor: {r: 1, g: 1, b: 1, a: 1}
-  middlePercentageColor: {r: 1, g: 1, b: 1, a: 1}
-  highPercentageColor: {r: 1, g: 1, b: 1, a: 1}
-  lowPercentageOutlineColor: {r: 0, g: 0, b: 0, a: 1}
-  middlePercentageOutlineColor: {r: 0, g: 0, b: 0, a: 1}
-  highPercentageOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+  lowPercentageColor: {r: 1, g: 1, b: 1, a: 0}
+  middlePercentageColor: {r: 1, g: 1, b: 1, a: 0}
+  highPercentageColor: {r: 1, g: 1, b: 1, a: 0}
+  lowPercentageOutlineColor: {r: 0, g: 0, b: 0, a: 0}
+  middlePercentageOutlineColor: {r: 0, g: 0, b: 0, a: 0}
+  highPercentageOutlineColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &8058206722618529476
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,9 +128,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8304284846226879741}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -158,6 +160,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.09945478, g: 0.94509804, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

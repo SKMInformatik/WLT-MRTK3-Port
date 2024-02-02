@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4133740187393454}
-  - component: {fileID: 114794997547214612}
+  - component: {fileID: 5060914041688341115}
   m_Layer: 0
   m_Name: WorldLockingManager
   m_TagString: Untagged
@@ -24,14 +24,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141710421841518}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114794997547214612
+--- !u!114 &5060914041688341115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1141710421841518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5fa969ae86b94db3d314558cf69ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c4cdb8e4a0d4d3498468628959ecab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shared:
@@ -53,8 +54,19 @@ MonoBehaviour:
       AutoSave: 1
     linkageSettings:
       useExisting: 0
+      applyAdjustment: 1
+      NoPitchAndRoll: 0
       AdjustmentFrame: {fileID: 0}
       CameraParent: {fileID: 0}
+    anchorSettings:
+      useDefaults: 1
+      anchorSubsystem: 1
+      ARSessionSource: {fileID: 0}
+      XROriginSource: {fileID: 0}
+      MinNewAnchorDistance: 1
+      MaxAnchorEdgeLength: 1.2
+      MaxLocalAnchors: 0
+      NullSubsystemInEditor: 1
   diagnosticsSettings:
     settings:
       useDefaults: 1

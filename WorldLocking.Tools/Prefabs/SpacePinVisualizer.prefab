@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 656164348478012889}
-  - component: {fileID: 656164348478012890}
+  - component: {fileID: 8456714924225166213}
   m_Layer: 0
   m_Name: SpacePinVisualizer
   m_TagString: Untagged
@@ -24,14 +24,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656164348478012891}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &656164348478012890
+--- !u!114 &8456714924225166213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,16 +41,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 656164348478012891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e62df43f837dec04690c9413ceb5c046, type: 3}
+  m_Script: {fileID: 11500000, guid: 080c8ab4d128d984586905462153e296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weightCubeMaxSize: 0.19
-  downwardsOffsetFromUser: 1.65
-  wireFrameMaterial: {fileID: 2100000, guid: 30a725532743f544d8873fd08a9040bb, type: 2}
-  meshMaterial: {fileID: 2100000, guid: e7629c5005d65c94ba769b3e2f1fe247, type: 2}
-  extrapolatedMeshMaterial: {fileID: 2100000, guid: 3cb6998e3870cb345a31ad89410518c1,
-    type: 2}
-  weightsMaterial: {fileID: 2100000, guid: 1e46624c9f6c5374da2204cd8c11e698, type: 2}
-  percentageWorldSpaceCanvasPrefab: {fileID: 3335127461111217805, guid: 20ac37323fee4694891b0de09cb74933,
-    type: 3}
+  verticalOffset: -1.65
+  textVerticalOffset: -1.45
+  wireFrameMaterial: {fileID: 2100000, guid: 11c09b3d352f4d844983740ce91ecc2b, type: 2}
+  meshMaterial: {fileID: 2100000, guid: fb0bf2f5a35ec0a4c9cc4b9dd6cab3e9, type: 2}
+  extrapolatedMeshMaterial: {fileID: 2100000, guid: 51cb7a065e9e335488feed11a619b396, type: 2}
+  weightsMaterial: {fileID: 2100000, guid: d195823f82498cf4dbca707b2275b834, type: 2}
+  percentageWorldSpaceCanvasPrefab: {fileID: 3335127461111217805, guid: cca5bdb44a1f03344852aff70a17a7e9, type: 3}
+  targetSubtree: {fileID: 0}
   isVisible: 1
